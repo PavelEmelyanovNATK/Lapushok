@@ -1,0 +1,22 @@
+﻿<Window x:Class="Lapushok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lapushok" xmlns:listmodule="clr-namespace:Lapushok.ListModule"
+        mc:Ignorable="d"
+        Title="Лапушок" Height="450" Width="800"
+        FontFamily="Gabriola">
+    <Grid>
+        <Frame
+            x:Name="FrameMain"
+            NavigationUIVisibility="Hidden"
+            JournalOwnership="OwnsJournal"
+            FontFamily="Gabriola"
+            >
+            <Frame.Content>
+                <listmodule:ListPage/>
+            </Frame.Content>
+        </Frame>
+    </Grid>
+</Window>

@@ -78,5 +78,10 @@ namespace Lapushok.ListModule
         {
             await RefreshProductsList();
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            new AddEditWindow().OpenForAdd();
+        }
     }
 }

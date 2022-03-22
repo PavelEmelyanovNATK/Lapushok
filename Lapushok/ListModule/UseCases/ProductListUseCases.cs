@@ -11,7 +11,7 @@ namespace Lapushok.ListModule.UseCases
 {
     public class ProductListUseCases
     {
-        public static string[] SortTypes = 
+        public static readonly string[] SortTypes = 
         {
             "По названию (возрастание)",
             "По названию (убывание)",

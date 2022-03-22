@@ -64,7 +64,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ListModule\AddEditWindow.xaml.cs">
+      <DependentUpon>AddEditWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListModule\UseCases\ProductWindowUseCases.cs" />
     <Compile Include="Services\DAO\LapushokDAO.cs" />
+    <Compile Include="Services\Resources\Resources.cs" />
+    <Page Include="ListModule\AddEditWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListModule\ListPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
